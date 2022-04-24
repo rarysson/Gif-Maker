@@ -9,6 +9,10 @@
 </head>
 
 <body>
+  <div class="alert-container">
+    <p>Format not supported</p>
+  </div>
+
   <label for="upload">
     <div class="drop-zone">
       Click to search your video or drag it here
@@ -16,6 +20,11 @@
   </label>
 
   <input id="upload" type="file" accept=".mp4" hidden>
+
+  <div class="video-container">
+    <video controls></video>
+    <button class="close-video-btn">X</button>
+  </div>
 
   <script type="module" src="/main.js"></script>
 </body>
