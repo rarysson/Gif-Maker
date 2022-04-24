@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
+	base: '/Gif-Maker/',
 	plugins: [
 		{
 			name: "configure-response-headers",
