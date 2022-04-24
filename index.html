@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Gif-Maker/assets/favicon.17e50649.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gif Maker</title>
+  <script type="module" crossorigin src="/Gif-Maker/assets/index.0cf25860.js"></script>
+  <link rel="stylesheet" href="/Gif-Maker/assets/index.0d8894b0.css">
+</head>
+
+<body>
+  <div class="alert-container">
+    <p></p>
+  </div>
+
+  <label class="drop-zone-container" for="upload">
+    <div class="drop-zone">
+      Click to search your video or drag it here
+    </div>
+  </label>
+
+  <input id="upload" type="file" accept=".mp4" hidden>
+
+  <div class="video-container">
+    <video controls></video>
+    <button class="close-video-btn">X</button>
+  </div>
+
+  <div class="input-container">
+    <label for="start-time">Start time</label>
+    <input type="number" id="start-time" step="0.25" min="0" max="5" value="0">
+  </div>
+
+  <button class="convert-btn" disabled>Convert</button>
+
+  <div class="progress-container">
+    <p>Converting ...</p>
+  </div>
+
+  <div class="gif-container">
+    <a class="download-img" download="video.gif">
+      <img class="gif">
+    </a>
+  </div>
+
+  
+</body>
+
+</html>
